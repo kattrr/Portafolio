@@ -4,271 +4,319 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/4121144db5.js" crossorigin="anonymous"></script>
+    
+    <!-- css header--> 
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header/menu.css">
+    <link rel="stylesheet" href="assets/css/header/menu_header.css">
+    <link rel="stylesheet" href="assets/css/header/menu_list.css">
+
+    <!-- css main--> 
+    <link rel="stylesheet" href="assets/css/main/main.css">
+    <link rel="stylesheet" href="assets/css/main/mainTitle.css">
+    <link rel="stylesheet" href="assets/css/main/mainTitle_profile.css">
+    <link rel="stylesheet" href="assets/css/main/sobreMi.css">
+    <link rel="stylesheet" href="assets/css/main/skills.css">
+    <link rel="stylesheet" href="assets/css/main/skills_lista.css">
+    <link rel="stylesheet" href="assets/css/main/hobbies.css">
+    <link rel="stylesheet" href="assets/css/main/expAcademicas.css">
+    <link rel="stylesheet" href="assets/css/main/expProfesional.css">
+    <link rel="stylesheet" href="assets/css/main/botones.css">
+    <link rel="stylesheet" href="assets/css/main/formContacto.css">
+    <link rel="stylesheet" href="assets/css/main/formulario.css">
+    <link rel="stylesheet" href="assets/css/main/formContainer.css">
+    <!-- css Footer -->
+    <link rel="stylesheet" href="assets/css/footer/footer.css">
+    <title>Mi Portafolio</title>
 </head>
 <body>
-    <!-- Sección del Menú  -->
-    <div class="tudo">
-        <section class="menu">
-            <header class="menu__header">
-                <img src="assets\vector.png">
-                <h3 class="menu__title">Fulana de Tal</h3>
-            </header>
+    <header class="menu">
+        <div class="menu__container">
+            <div class="menu__header">
+                <a href="#home" class="menu__header__link" title="Inicio" tabindex=0>
+                    <img src="assets/img/vector.png" class="menu__header__img">
+                </a>
+            </div>
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
+                    <li class="menu__list__item"><a href="#about">Sobre mi</a></li>
                     <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                    <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                    <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-                    <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                    <li class="menu__list__item"><a href="#contacto">Contacto@fulana.com</a></li>
+                    <li class="menu__list__item"><a href="#seccionHobbies">Hobbies</a></li>
+                    <li class="menu__list__item"><a href="#seccionFormacion">Formación</a></li>
+                    <li class="menu__list__item"><a href="#seccionProyectos">Proyectos</a></li>
+                    <li class="menu__list__item"><a href="#seccionFormulario">Contacto</a></li>
                 </ul>
-                <li class="menu__list__item__contato"><a href="#contacto">contacto@fulana.com</a></li>
             </nav>
-        </section>
-    
-        <!-- Sección del Header/Title/Hero -->
-        <section class="title">
-            <div class="title__div">
-                <img class="title__profile" src="assets\profile.png">
-                <div class="title__container">
-                    <h2 class="title__bio">Hola, mi nombre es Fulana de Tal y construyo paginas web</h2>
-                    <h3 class="title__subsection">Soy formada en .... lorem ipsum sit amet consectetur y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</h3>
-                    <ul class="title__network">
-                         <!-- Pon los enlaces de tus redes sociales favoritas -->
-                        <li class="title__network__item"><a href="">Github <img src="assets\arrow.png"> </a></li>
-                        <li class="title__network__item"><a href="">Linkedin <img src="assets\arrow.png"></a></li>
-                        <li class="title__network__item"><a href="">Instagram <img src="assets\arrow.png"></a></li>
-                        <li class="title__network__item"><a href="">Currículo <img src="assets\arrow.png"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Sección sobre mi -->
-        <section class="about" id="sobre-mi">
-            <div class="about__container">
-                <h3 class="about__title">Sobre mi</h3>
-                <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia.  </p>
-                <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
-                <!-- Si quieres, pon tú firma acá! -->
-                <img src="assets\signature.png">
-            </div>
-        </section>
-    
-        <!-- Sección de Skills -->
-        <section class="skills" id="skills">
-            <h3 class="skills__title">Skills</h3>
-                <div class="skills__line">
-                    <div class="skills__box">
-                        <ul>
-                            <li class="skills__img"><img src="assets\htlm.png"></li>
-                            <li class="skills__name"> HTML 5</li>
-                        </ul>
-                    </div>
-    
-                    <div class="skills__box">
-                        <ul>
-                            <li class="skills__img"> <img src="assets\js_icon.png" alt=""></li>
-                            <li class="skills__name">Javascript</li>
-                        </ul>
-                    </div>
-    
-                    <div class="skills__box">
-                        <ul>
-                            <li class="skills__img"> <img src="assets\php_icon.png" alt=""></li>
-                            <li class="skills__name">PHP</li>
-                        </ul>
-                    </div>
-    
-                    <div class="skills__box">
-                        <ul>
-                            <li class="skills__img"><img src="assets\nodejs_icon.png" alt=""></li>
-                            <li class="skills__name">Node JS</li>
-                        </ul>
-                    </div>
-    
-                    <div class="skills__box">
-                        <ul>
-                            <li class="skills__img"> <img src="assets\react_icon.png" alt=""> </li>
-                            <li class="skills__name">React</li>
-                        </ul>
-                    </div>
-    
-                    <div class="skills__box">
-                        <ul>
-                            <li class="skills__img"> <img src="assets\css_icon.png" alt=""> </li>
-                            <li class="skills__name">CSS</li>
-                        </ul>
-                    </div>
-            </div>
-        </section>
-    
-        <!-- Sección de Hobbies -->
-        <section class="hobbies" id="hobbies">
-            <h3 class="hobbies__title">Hobbies</h3>
-                <div class="hobbies__line">
-                    <div class="hobbies__box">
-                        <ul>
-                            <li class="hobbies__img"><img src="assets\skate_icon.png"></li>
-                            <li class="hobbies__name"> Patinaje</li>
-                        </ul>
-                    </div>
-    
-                    <div class="hobbies__box">
-                        <ul>
-                            <li class="hobbies__img"> <img src="assets\guitar_icon.png" alt=""></li>
-                            <li class="hobbies__name">Tocar bajo</li>
-                        </ul>
-                    </div>
-    
-                    <div class="hobbies__box">
-                        <ul>
-                            <li class="hobbies__img"> <img src="assets\headphones_icon.png" alt=""></li>
-                            <li class="hobbies__name">Oir música</li>
-                        </ul>
-                    </div>
-    
-                    <div class="hobbies__box">
-                        <ul>
-                            <li class="hobbies__img"><img src="assets\tv_icon.png" alt=""></li>
-                            <li class="hobbies__name">Ver séries</li>
-                        </ul>
-                    </div>
-    
-                    <div class="hobbies__box">
-                        <ul>
-                            <li class="hobbies__img"> <img src="assets\forkspoon_icon.png" alt=""> </li>
-                            <li class="hobbies__name">Cocinar</li>
-                        </ul>
-                    </div>
-    
-                    <div class="hobbies__box">
-                        <ul>
-                            <li class="hobbies__img"> <img src="assets\camera_icon.png" alt=""> </li>
-                            <li class="hobbies__name">Tomar fotos</li>
-                        </ul>
-                    </div>
-            </div>
-        </section>
-    
-            <!-- Sección de Formación académica -->
-        <section class="academic" id="formacion">
-            <h2 class="academic__title" >Formación académica</h2>
-            <div class="academic__courses">
-                <div class="academic__courses__box">
-                    <ul class="academic__courses__list">
-                        <!-- Pon el logotipo de la institución de formación -->
-                        <li class="academic__courses__item__img"><img src="assets\ufpr_logo.png"></li>
-                        <li class="academic__courses__item__title"><h4>Análisis de datos</h4></li>
-                        <li class="academic__courses__item__subtitle"><p>2018 - UFPR</p></li>
-                    </ul>
-                </div>
-                <div class="academic__courses__box">
-                    <ul class="academic__courses__list">
-                        <!--Pon el logotipo de la institución de formación -->
-                        <li class="academic__courses__item__img"><img src="assets\alura_logo.png"></li>
-                        <li class="academic__courses__item__title"><h4>Formación en UX Design</h4></li>
-                        <li class="academic__courses__item__subtitle"><p>2019 - Alura</p></li>
-                    </ul>
-                </div>
-                <div class="academic__courses__box">
-                    <ul class="academic__courses__list">
-                        <!-- Pon el logotipo de la institución de formación -->
-                        <li class="academic__courses__item__img"><img src="assets\ufrj_logo.png"></li>
-                        <li class="academic__courses__item__title"><h4>Posgrado en diseño</h4></li>
-                        <li class="academic__courses__item__subtitle"><p>En curso - UFRJ</p></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    
-        <!-- Sección de Experiencia Profesional/Proyectos-->
-        <section class="experience" id="xp">
-            <h2 class="experience__section__title" >Experiencia Profissional</h2>
-            <div class="experiencie__box">
-                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets\decod_print.png">
-                <div class="experience__info"
-                    <h2 class="experience__title">Encriptador de texto</h2>
-                    <h3 class="experience__text">Challenge Alura Codificador </h3>
-                        <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                                <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
-                        </div>
-                </div>
-            </div>  
-    
-            <div class="experiencie__box">
-                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets\forca_print.png">
-                <div class="experience__info"
-                    <h2 class="experience__title">Juego creado con HTML y JavaScript</h2>
-                    <h3 class="experience__text">Challenge Oracle </h3>
-                        <div class="experience__description">
-                            <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-juego-ahorcado"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                                <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
-                        </div>
-                </div>
-            </div>  
-    
-            <div class="experience__box">
-                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets\secretcode_print.png">
-                <div class="experience__info-container"
-                    <h2 class="experience__title">Encriptador de texto</h2>
-                    <h3 class="experience__text">Challenge Oracle </h3>
-                        <div class="experience__description">
-                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                                <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
-                        </div>
-                </div>
-            </div>  
-    
-            <div class="experience__box">
-                <img class="experience__img" src="assets\forca2_print.png">
-                <div class="experience__info-container"
-                <h2 class="experience__title">Juego creado con HTML, CSS y JavaScript</h2>
-                    <h3 class="experience__text">Challenge Oracle </h3>
-                        <div class="experience__description">
-                                <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-juego-ahorcado"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                                <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
-                        </div>
-            </div>
-            </div>  
-    
-            <!-- Sección de Contacto -->
-            <section class="formcontato" id="contacto">
-                <div  class="formcontato__contacto">
-                    <div class="formcontato--esquerda">
-                        <img class="formcontato__img" src="assets\contact_image.png">
-                    </div>
-                    <div class="formcontato__text">
-                        <h2 class="formcontato__title">Contacto</h2>
-                        <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
-                        <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
-                        <form class="formcontato__form" name="form">
-                            <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
-                            <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-                            <input class="formcontato__input" type="text" name="asunto" placeholder="Assunto">
-                            <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
-                            <button type="submit" class="formcontato__botao">Enviar mensaje</button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-    
-            <!-- Sección de Footer -->
-            <section class="footer">
-                <div class="footer__rodape">
-                    <p>Desarrollado por Fulana de Tal</p>
-                    <p>2022</p>
-                </div>
-            </section>
         </div>
+    </header>
+    <!-- Contenido principal--> 
+    <main class="main" id="home">
+        <section class="mainTitle">
+            <div class="container">
+                <div class="mainTitle__profile" id="about">
+                    <div class="mainTitle__profile__presentacion">
+                        <h2 class="mainTitle__profile__bio">Hola, mi nombre es Kathering Rivera <br><br> Diseño y Desarrollo Páginas Web</h2>
+                        <p class="mainTitle__profile__subsection">Soy Estudiante de ultimos semestres en la Fundación Universitaria de la Rioja.
+                            Actualmente me estoy especializanso en Diseño Ux con google gracias a la Universidad de Cafam y Formando en Desarrollo 
+                            Fron-End con Alura Latam y Oracle Next Education gracias a la <a href="https://www.sopo-cundinamarca.gov.co/">Alcaldia de Sopó</a>.
+                        </p>
+                        <ul class="mainTitle__profile__network">
+                            
+                            <li class="mainTitle__profile__network__item">
+                                <a  class="mainTitle__profile__network__link" href="https://github.com/kattrr">
+                                    <i class=" fa-brands fa-github fa-2xl" style="color: #3e54ac;">
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="mainTitle__profile__network__item">
+                                <a class="mainTitle__profile__network__link" href="https://www.linkedin.com/in/katheringriverar/">
+                                    <i class="fa-brands fa-linkedin fa-2xl" style="color: #3e54ac;"></i>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="mainTitle__profile__img mainTitle__profile__img--katt"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Sección sobre mi -->
+        <section class="about font-style" id="sobre-mi">
+            <div class="container">
+                <div class="aboutMe">
+                    <h3 class="about__title" id="sobreMi">Sobre mi</h3>
+                    <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. 
+                        Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia.  </p>
+                    <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. 
+                        Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. 
+                        Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Sección de Skills -->
+        <section class="container" id="skills">
+            <div class="skills">
+                <h2 class="skills__title subtitulos">Skills</h2>
+                <ul class="lista-grid">
+                    <li class="lista-grid__item">
+                        <div class="skills__icono seccion-skills__icono--html5"></div>
+                        <p class="skills__descripcion" tabindex=0>HTML5</p>
+                    </li>
+                    <li class="lista-grid__item">
+                        <div class="skills__icono seccion-skills__icono--javascript"></div>
+                        <p class="skills__descripcion" tabindex=0>JavaScript</p>
+                    </li>
+                    <li class="lista-grid__item">
+                        <div class="skills__icono seccion-skills__icono--css3"></div>
+                        <p class="skills__descripcion" tabindex=0>CSS3</p>
+                    </li>
+                    <li class="lista-grid__item">
+                        <div class="skills__icono seccion-skills__icono--react"></div>
+                        <p class="skills__descripcion" tabindex=0>React</p>
+                    </li>
+                    <li class="lista-grid__item">
+                        <div class="skills__icono seccion-skills__icono--mysql"></div>
+                        <p class="skills__descripcion" tabindex=0>Node JS</p>
+                    </li>
+                    <li class="lista-grid__item">
+                        <div class="skills__icono seccion-skills__icono--git"></div>
+                        <p class="skills__descripcion" tabindex=0>Git</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="seccion-hobbies" id="seccionHobbies">
+                <h2 class="subtitulos" tabindex=0>Hobbies</h2>
+                <ul class="lista-grid">
+                   <li class="lista-grid__item">
+                        <div class="seccion-hobbies__icono seccion-hobbies__icono--audifonos"></div>
+                        <p class="seccion-hobbies__parrafo font-style" tabindex=0>Oir Música</p>
+                   </li>
+                   <li class="lista-grid__item">
+                        <div class="seccion-hobbies__icono seccion-hobbies__icono--libro"></div>
+                        <p class="seccion-hobbies__parrafo font-style" tabindex=0>Jugar Videojuegos</p>
+                    </li>
+                   <li class="lista-grid__item">
+                        <div class="seccion-hobbies__icono seccion-hobbies__icono--pantalla"></div>
+                        <p class="seccion-hobbies__parrafo font-style" tabindex=0>Ver Series y Peliculas</p>
+                   </li>
+                   <li class="lista-grid__item">
+                        <div class="seccion-hobbies__icono seccion-hobbies__icono--ojo"></div>
+                        <p class="seccion-hobbies__parrafo font-style" tabindex=0>Leer</p>
+                    </li>
+                   <li class="lista-grid__item">
+                        <div class="seccion-hobbies__icono seccion-hobbies__icono--cine"></div>
+                        <p class="seccion-hobbies__parrafo font-style" tabindex=0>Tocar Instrumentos</p>
+                   </li>
+                   
+                </ul>
+             </div>
+        </section>
+        <section class="seccion-experiencias-academicas">
+            <div class="formacion-academica" id="seccionFormacion">
+               <div class="container">
+                  <h2 class="subtitulos" tabindex=0>Formación Académica</h2>
+                  <ul class="formacion-academica__instituciones">
+                     <li class="formacion-academica__institucion">
+                        <a class="formacion-academica__link" href="https://www.unir.net/ingenieria/grado-informatica/" target="_blank"
+                           title="Ir a UTFV" tabindex=0>
+                           <img class="formacion-academica__imagen" src="assets/img/Unir_2021_logo.svg"
+                              alt="Logotipo de la UNIR" tabindex=0>
+                        </a>
+                        <div class="formacion-academica__info">
+                           <p class="formacion-academica__formacion font-style" tabindex=0>
+                              Pregarado Ingeniería Informatica</p>
+                           <p class="formacion-academica__nombre tamañoLetraDescripcionImagen font-style" tabindex=0>
+                              2020 - 2025 Fundación Universitaria de la Rioja (UNIR)</p>
+                        </div>
+                     </li>
+                     <li class="formacion-academica__institucion">
+                        <a class="formacion-academica__link" href="https://https://www.coursera.org/professional-certificates/diseno-de-experiencia-del-usuario-ux-de-google"
+                         target="_blank" tabindex=0>
+                           <div class="formacion-academica__imagen div" >
+                                <img class="formacion-academica__imagen--unicafam" src="./assets/img/logo_unicafam-pweb.png"
+                                    alt="Logotipo unicafam" tabindex=0>
+                                <img class="formacion-academica__imagen--google" src="assets/img/google_logo.jpg" alt="Logotipo google">
+                                <img class="formacion-academica__imagen--coursera" src="assets/img/coursera_logo.png" alt="Logotipo coursera">
+                            </div>
+                        </a>
+                        <div class="formacion-academica__info">
+                           <p class="formacion-academica__formacion font-style" tabindex=0>
+                              Certificado Profesional Diseño Experiencia de Usuario (UX) de Google</p>
+                           <p class="formacion-academica__nombre tamañoLetraDescripcionImagen font-style" tabindex=0>
+                              2023 - Google + unicafam + Coursera</p>
+                        </div>
+                     </li>
+                     <li class="formacion-academica__institucion">
+                        <a class="formacion-academica__link"
+                           href="https://https://www.aluracursos.com/cursos-online-front-end"
+                           target="_blank" title="Ir a Alura" tabindex=0>
+                           <img class="formacion-academica__imagen" src="./assets/img/alura-logo.svg"
+                              alt="Logotipo de Alura" tabindex=0>
+                        </a>
+                        <div class="formacion-academica__info">
+                           <p class="formacion-academica__formacion font-style" tabindex=0>
+                              Formaciones en Front End (HTML5, CSS3 y JavaScript)</p>
+                           <p class="formacion-academica__nombre tamañoLetraDescripcionImagen font-style" tabindex=0>
+                              2023 - Alura Latam + Oracle Next Education</p>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+        </section>
+        <section class="container" id="seccionProyectos">
+            <div class="experiencias-area">
+                <div class="experiencias-area">
+                    <h2 class="subtitulos" tabindex=0>Experiencia Profesional</h2>
+                    <div class="experiencias-area__experiencia">
+                       <img class="experiencias-area__imagen experiencias-area__imagen--orderPrimero"
+                          src="./assets/img/encriptador.PNG" alt="Vista previa del Encriptador de Texto"
+                          title="Encriptador de Texto" tabindex=0>
+                       <div class="experiencias-area__descripciones experiencias-area__descripciones--orderSegundo">
+                          <p class="experiencias-area__proyecto" tabindex=0>
+                             Encriptador de Texto.
+                          </p>
+                          <p class="experiencias-area__organizacion" tabindex=0>
+                             Challenge Oracle Next Education y Alura latam.
+                          </p>
+                          <div class="experiencias-area__btns">
+                             <a class="boton boton--blanco" href="https://github.com/kattrr/Encriptador-Alura-One"
+                                target="_blank" tabindex=0>Repositorio </a>
+                             <a class="boton boton--secundario"
+                                href="https://kattrr.github.io/Encriptador-Alura-One/" target="_blank"
+                                tabindex=0> Ver en Github Pages</a>
+                          </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="seccion-formulario-contacto">
+            <div class="container">
+               <div class="formulario-container" id="seccionFormulario">
+                  <div class="formulario-container__imagen formulario-container__imagen--contacto"></div>
+                  <div class="formulario-container__contacto">
+                     <h2 class="formulario-container__subtitulo subtitulos" tabindex=0>Contacto</h2>
+                     <form class="formulario" action="https://formspree.io/f/mknenbrr" method="POST">
+                        <legend class="formulario__legend" tabindex=0>
+                           ¿Quieres contactarme?<br>
+                           Complete el siguiente formulario y me pondré en contacto con usted
+                           lo antes posible.
+                        </legend>
+                        <div class="formulario__campos">
+                           <label class="formulario__label" for="nombre" tabindex=0>Nombre Completo:</label>
+                           <input class="formulario__campo" id="nombre" name="nombre" type="text" required
+                              title="La primer letra de cada nombre y apellido debe ser en mayúscula, no debe haber más de un espacio en blanco y no puede haber más de 50 carácteres."
+                              tabindex=0 placeholder="Nombre(s) Apellido(s)"
+                              pattern="^(?=.{3,50}$)([A-ZÁÉÍÓÚ][a-záéíóúñ]+(?:[\s][A-ZÁÉÍÓÚ][a-záéíóúñ]+)+)$" minlength="3"
+                              maxlength="50" data-campo="nombre">
+                           <span class="formulario__span--error" tabindex=0>
+                              Por favor, completa este campo.
+                           </span>
+                        </div>
+                        <div class="formulario__campos formulario__campos--blue">
+                           <label class="formulario__label" for="email" tabindex=0>Correo Electrónico:</label>
+                           <input class="formulario__campo formulario__campo--bluefocus" id="email" name="email"
+                              type="email" required title="No debe estar vacío o en blanco, en formato correo@dominio.com"
+                              placeholder="correousuario@dominio.com"
+                              pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+[.](?:[a-zA-Z0-9-]+)([.][a-z]{2,4})?$"
+                              tabindex=0 data-campo="correo">
+                           <span class="formulario__span--error" tabindex=0>
+                              Por favor, completa este campo.
+                           </span>
+                        </div>
+                        <div class="formulario__campos" tabindex=0>
+                           <label class="formulario__label" for="asunto" tabindex=0>Asunto:</label>
+                           <input class="formulario__campo" id="asunto" name="asunto" type="text" required
+                              title="No debe estar vacío o en blanco, no se admiten números, sólo texto y signos (,.|), no puede ingresar más de 50 carácteres."
+                              placeholder="Asunto"
+                              pattern="^(?=.{10,50}$)([A-ZÁÉÍÓÚÑa-záéíóúñ,.|]+(?:[\s][A-ZÁÉÍÓÚÑa-záéíóúñ,.|]+)+)$"
+                              tabindex=0 data-campo="asunto" minlength="6" maxlength="50">
+                           <span class="formulario__span--error" tabindex=0>
+                              Por favor, completa este campo.
+                           </span>
+                        </div>
+                        <div class="formulario__campos" tabindex=0>
+                           <label class="formulario__label" for="mensaje" tabindex=0>Mensaje:</label>
+                           <textarea class="formulario__textarea" id="mensaje" name="mensaje" required
+                              title="Escriba el mensaje" placeholder="Escribe tu mensaje" tabindex=0 data-campo="mensaje"
+                              minlength="20" maxlength="300"></textarea>
+                           <span class="formulario__span--error" tabindex=0>
+                              Por favor, completa este campo.
+                           </span>
+                        </div>
+                        <button class="boton boton--secundario boton--bloqueado" id="boton-enviar" type="submit"
+                           tabindex=0>Enviar mensaje</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+        </section>
+    </main>
+    <!-- Sección de Footer -->
+    <footer class="seccion-footer">
+        <div class="container">
+           <div class="seccion-footer__copyright">
+                <div class="seccion-footer__datos">
+                    <img class="logo-container__logo" src="assets/img/vector.png"
+                        alt="Logo Personal de Kathering" tabindex=0>
+                    <p class="seccion-footer__autor" tabindex=0>Desarrollado por Kathering Rivera Rodriguez &#169; 2023</p>
+                </div>
+                <div class="seccion-footer__agradecimientos">
+                    <p class="seccion-footer__parrafo" tabindex=0>Agradecimientos a los siguientes autores.</p>
+                    <a class="seccion-footer__link link-style" href="https://unsplash.com/es" target="_blank"
+                        title="Ir a freepik" tabindex=0>Unsplash</a>
+                    <a class="seccion-footer__link link-style" href="https://fontawesome.com/"
+                        target="_blank" title="Ir a High Quality Icons" tabindex=0>Font Awesome</a>
+                </div>
+           </div>
+        </div>
+     </footer>
+     <script src="assets/js/main.js" type="module"></script>
 </body>
 </html>

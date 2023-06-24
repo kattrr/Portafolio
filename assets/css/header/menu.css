@@ -1,0 +1,22 @@
+.menu{
+    background-color: var(--col-de-fondo);
+    height: var(--altura-header-Escritorio);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: transform 0.4s;
+}
+.scroll-down .menu{
+    transform: translate3d(0, -100%, 0);
+}
+.scroll-up .menu {
+    transform: none;
+}
+.menu__container{
+    align-items: center;
+    display: flex;
+    height: inherit;
+    justify-content: space-between;
+    margin: var(--centrar-con-margin);
+    max-width: var(--tamaño-containerMaxWidth);
+}

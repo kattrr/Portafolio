@@ -1,0 +1,157 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+:root{
+    --font-family: "Lato Extended","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    --col-de-fondo: #ECF2FF;
+    --col-de-link: rgb(62, 84, 172);
+    --font-color:#2F2B5B;
+    --font-color-two: #ECF2FF;
+    --color-fondo-secundario: #BFACE2;
+    --color-botones-primario: #FF2D5F;
+
+    /* Alncho y alto de foto */
+    /*368px*/
+    --ancho-alto-foto-Escritorio: 23em;
+    /*146px*/
+    --ancho-alto-foto-Tablet: 9.125em;
+    /*98px*/
+    --ancho-alto-foto-Celular: 6.125em;
+    /**/
+
+    /* Alturas de header para Escritorio, Tablet y Celular */
+    /*88px*/
+    --altura-header-Escritorio: 5.5em;
+    /*80px*/
+    --altura-header-Tablet: 5em;
+    /*32px*/
+    --altura-menu-Tablet: 2em;
+    /*124.483pxpx*/
+    --altura-header-Celular: 7.1em;
+    /* */
+
+    /* Formula para calcular la altura total de la seccionPresentación en Escritorio */
+    --altura-seccionPresentacion: calc(100vh - var(--altura-header-Escritorio));
+    --altura-seccionPresentacion-Celular: calc(100vh - var(--altura-header-Celular));
+    --altura-seccionPresentacion-Tablet: calc(100vh - var(--altura-header-Tablet));
+
+
+    /* Tamaños de letra */
+    
+    /* Escritorio*/
+    /*52px*/
+    --tamañoLetraEscritorio-titulos: 3.25em;
+    /*32px*/
+    --tamañoLetraEscritorio-subtitulosSeccion: 2em;
+    /*22px*/
+    --tamañoLetraEscritorio-subtitulosDscImagen: 1.375em;
+    /*16px*/
+    --tamañoLetraEscritorio-parrafosYLinks-dscImagen-botones: 1em;
+
+    /* Tablet */
+    /*22px*/
+    --tamañoLetraTablet-titulosYSubtitulos: 1.375em;
+    /*16px*/
+    --tamañoLetraTablet-parrafosYLinks-dscBienvenida-subtitulosDscImagen: 1em;
+    /*14px*/
+    --tamañoLetraTablet-parrafoSobreMi-dscImagenes-botones: 0.875em;
+
+    /*<----Móvil---->*/
+    /*22px*/
+    --tamañoLetraCelular-tituloBienvenida-subtitulosSeccion: 1.375em;
+    /*16px*/
+    --tamañoLetraCelular-subtituloDescripcionImagen: 1em;
+    /*14px*/
+    --tamañoLetraCelular-parrafosYLinks-descripcionImagen: 0.875em;
+    /* */
+
+    /*<------------------Tamaño container-------------------*/
+    /*
+    --1136px Para evitar desbordamiento. 
+    --Valor aplicado en el container.css
+    */
+    --tamaño-containerMaxWidth: 71em;
+    /*Padding aplicado al container en media queries*/
+    --padding-tablet-celularHorizontal: 0 2em;
+    --padding-celularVertical: 0 1em;
+    /*<----------------Fin Tamaño container-----------------*/
+
+    /*Variable para centrar elementos horizontalmente*/
+    --centrar-con-margin: 0 auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: var(--col-de-fondo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--col-de-link);
+}
+/*Definiendo propiedad smooth-scroll, tipografía y color de fuente global*/
+html {
+    color: var(--font-color);
+    
+    scroll-behavior: smooth;
+}
+.container {
+    height: inherit;
+    margin: var(--centrar-con-margin);
+    max-width: var(--tamaño-containerMaxWidth);
+    width: 100%;
+    /*heigth: inherit*/
+}
+/*<------------------------------------------Selectores Genéricos------------------------------------------>*/
+/*Configurando tipografía y color de tipografía*/
+.font-style {
+    color: var(--font-color);
+}
+/*Configurando color de links, eliminando subrayado y 
+colocando una transición*/
+.link-style {
+    color: var(--font-color);
+    font-weight: 500;
+    text-decoration: none;
+    /*Estableciendo tiempo de desplazamiento al pasar el mouse*/
+    transition: 0.5s;
+}
+
+/*Configurando desplazamiento hacia abajo al pasar 
+el puntero sobre el link*/
+.link-style:hover {
+    color: var(--color-botones-primario);
+}
+/*Configurando subtitulos h2 con margen inferior de 32 px
+y alineados al centro*/
+.subtitulos {
+    font-size: var(--tamañoLetraEscritorio-subtitulosSeccion);
+    font-weight: 700;
+    margin: 0 0 2em 0;
+    ;
+    text-align: center;
+}
+/*<----------------------------------------Fin Selectores Genéricos---------------------------------------->*/
+/*Tablets y celulares grandes u horizontales*/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .subtitulos {
+        font-size: var(--tamañoLetraTablet-titulosYSubtitulos);
+    }
+/*Celulares verticales*/
+
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .subtitulos {
+        font-size: var(--tamañoLetraCelular-tituloBienvenida-subtitulosSeccion);
+    }
+}

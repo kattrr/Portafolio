@@ -1,0 +1,22 @@
+.about {
+    align-items: flex-start;
+    background-color: var(--color-fondo-secundario);
+    display: flex;
+}
+.aboutMe{
+    max-width: 46.937em;
+    padding: var(--altura-header-Escritorio) 0;
+    width: 100%;
+}
+
+/*Eliminando margenes*/
+.about__title{
+    margin: 0;
+}
+
+/*Eliminando margen inferior*/
+.about__paragraph {
+    line-height: 19px;
+    font-weight: 400;
+    margin-bottom: 0;
+}

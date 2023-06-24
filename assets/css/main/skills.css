@@ -1,0 +1,39 @@
+.skills {
+    padding: var(--altura-header-Escritorio) 0;
+}
+
+/*Container con ancho y alto de 30px*/
+.skills__icono {
+    width: 2.3125rem;
+    height: 2.3125rem;
+}
+
+/*Selectores flag para iconos*/
+.seccion-skills__icono--html5 {
+    background: url("../../img/htlm.png") center / 100% 100% no-repeat;
+}
+
+.seccion-skills__icono--javascript {
+    background: url("../../img/js_icon.png") center / 100% 100% no-repeat;
+}
+
+.seccion-skills__icono--css3 {
+    background: url("../../img/css_icon.png") center / 100% 100% no-repeat;
+}
+
+.seccion-skills__icono--react {
+    background: url("../../img/react_icon.png") center / 100% 100% no-repeat;
+}
+
+.seccion-skills__icono--mysql {
+    background: url("../../img/nodejs_icon.png") center / 100% 100% no-repeat;
+}
+
+.seccion-skills__icono--git {
+    background: url("../../img/git.png") center / 100% 100% no-repeat;
+}
+.skills__descripcion {
+    font-weight: 700;
+    margin: 0.5em 0 0 0;
+    width: 100%;
+}

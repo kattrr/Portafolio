@@ -1,0 +1,66 @@
+.mainTitle__profile{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    margin-top: 0;
+    width: inherit;
+}
+.mainTitle__profile__presentacion{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    margin-top: var(--altura-header-Escritorio);
+    width: 66.2%;
+}
+.mainTitle__profile__bio{
+    color: var(--font-color);
+    font-size: var(--tamañoLetraEscritorio-titulos);
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.mainTitle__profile__subsection{
+    color: var(--font-color);
+    font-size: var(--tamañoLetraEscritorio-subtitulosDscImagen);
+    font-weight: 500;
+    margin: 0.5em 0 0 0;
+}
+.mainTitle__profile__network{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    width: 25.1em;
+}
+.mainTitle__profile__network__item{
+    transition: all 0.5s ease-out;
+}
+.mainTitle__profile__network__item:hover{
+    transform: translate(0, 0.3em);
+}
+
+.mainTitle__profile__network__link{
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+}
+.fa-github, .fa-linkedin{
+    margin: 0.5em;
+    font-size: 4rem;
+}
+
+.mainTitle__profile__img {
+    border-radius: 100%;
+    background-position: center;
+    width: var(--ancho-alto-foto-Escritorio);
+    height: var(--ancho-alto-foto-Escritorio);
+    margin-top: var(--altura-header-Escritorio);
+    background-repeat: no-repeat;
+    
+    
+}
+.mainTitle__profile__img--katt{
+    background-image: url('../../img/profile.jpg');
+    background-size: 100%;
+}

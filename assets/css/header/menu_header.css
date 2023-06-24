@@ -1,0 +1,14 @@
+.menu__header{
+    align-items: center;
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    width: 3.5em;
+}
+
+.menu__header__img{
+    width: 3.2em;
+}
+.menu__header__link{
+    text-decoration: none;
+}

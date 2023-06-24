@@ -1,0 +1,62 @@
+.formulario-container {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--altura-header-Escritorio) 0;
+}
+
+/*Configurando ancho y alto de container para imagen*/
+.formulario-container__imagen {
+    height: 593px;
+    width: 41%;
+    /*464px*/
+}
+
+/*Selector de clase flag para imagen de fondo*/
+.formulario-container__imagen--contacto {
+    background: url('../../img/contact_image.png') no-repeat center / cover;
+}
+
+/*Estableciendo ancho y alto en container de subtitulo y formulario*/
+.formulario-container__contacto {
+    height: inherit;
+    width: 57%;
+}
+
+/*Selector de clase flag para configurar margen de subtitulo
+y alineación izquierda*/
+.formulario-container__subtitulo {
+    margin: 0 0 0.25em 0;
+    text-align: left;
+}
+
+/*Tablets y celulares grandes u horizontales*/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .formulario-container {
+        padding: var(--altura-header-Tablet) 0;
+    }
+
+    /*Eliminando visualización de imagen de contacto*/
+    .formulario-container__imagen {
+        display: none;
+    }
+
+    .formulario-container__contacto {
+        width: 100%;
+    }
+}
+
+/*Celulares verticales*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .formulario-container {
+        padding: var(--altura-header-Celular) 0;
+    }
+
+    /*Eliminando visualización de imagen de contacto*/
+    .formulario-container__imagen {
+        display: none;
+    }
+
+    .formulario-container__contacto {
+        width: 100%;
+    }
+}
